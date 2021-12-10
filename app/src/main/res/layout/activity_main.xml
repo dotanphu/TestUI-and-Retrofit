@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/nightLife"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/nightlife"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nightLife" />
+
+    <TextView
+        android:layout_width="245dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="549dp"
+        android:text="Connect with others financians"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="600"
+        android:textSize="22dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/viewChat"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="396dp"
+        android:background="@drawable/chat_input"
+        android:hint="  ID / Email / Phone number"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="282dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_chatinput"
+        app:layout_constraintStart_toStartOf="@id/viewChat"
+        app:layout_constraintTop_toTopOf="@id/viewChat" />
+
+    <EditText
+        android:id="@+id/viewPassword"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="434dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="330dp"
+        android:background="@drawable/chat_input"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="282dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_password"
+        app:layout_constraintStart_toStartOf="@id/viewPassword"
+        app:layout_constraintTop_toTopOf="@id/viewPassword" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="494dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="300dp"
+        android:text="Forgot Password?"
+        android:textAlignment="center"
+        android:textColor="#ECE8FF"
+        android:textFontWeight="600"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btnLogin"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32.16dp"
+        android:layout_marginTop="537dp"
+        android:layout_marginRight="30.84dp"
+        android:layout_marginBottom="225dp"
+        android:background="@drawable/btn_login"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="400"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="112dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="614dp"
+        android:layout_marginRight="132dp"
+        android:layout_marginBottom="168dp"
+        android:text="Or signin up with  "
+        android:textAlignment="center"
+        android:textColor="#ECE8FF"
+        android:textFontWeight="400"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/img1"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="49.5dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginRight="269.5dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/backgroupfour"
+        android:src="@drawable/ic_vantay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgGoogle"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="123.5dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginRight="195.5dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/backgroupfour"
+        android:src="@drawable/ic_google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgFaceBook"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="197.5dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginRight="121.5dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/backgroupfour"
+        android:src="@drawable/ic_fb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/img4"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="271.5dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginRight="47.5dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/backgroupfour"
+        android:src="@drawable/ic_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="81dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="720dp"
+        android:layout_marginRight="205dp"
+        android:layout_marginBottom="85dp"
+        android:text="Version 1.0.1  "
+        android:textColor="#99FFFFFF"
+        android:textFontWeight="400"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="114dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="720dp"
+        android:layout_marginRight="89dp"
+        android:layout_marginBottom="85dp"
+        android:gravity="right"
+        android:text="Create Account"
+        android:textColor="#DEFFFFFF"
+        android:textFontWeight="600"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
