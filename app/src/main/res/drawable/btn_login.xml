@@ -1,50 +1,40 @@
-<vector
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="312dp"
     android:height="50dp"
     android:viewportWidth="312"
-    android:viewportHeight="50"
-    >
+    android:viewportHeight="50">
 
     <group>
 
-        <clip-path
-            android:pathData="M10 0H302C307.523 0 312 4.47715 312 10V40C312 45.5228 307.523 50 302 50H10C4.47715 50 0 45.5228 0 40V10C0 4.47715 4.47715 0 10 0Z"
-            />
+        <clip-path android:pathData="M10 0H302C307.523 0 312 4.47715 312 10V40C312 45.5228 307.523 50 302 50H10C4.47715 50 0 45.5228 0 40V10C0 4.47715 4.47715 0 10 0Z" />
 
         <group
-            android:translateX="0"
-            android:translateY="-0.335"
             android:pivotX="156"
             android:pivotY="25"
             android:scaleX="2"
             android:scaleY="1.339"
-            >
+            android:translateX="0"
+            android:translateY="-0.335">
 
-            <path
-                android:pathData="M0 0V50H312V0"
-                >
+            <path android:pathData="M0 0V50H312V0">
 
                 <aapt:attr name="android:fillColor">
 
                     <gradient
-                        android:type="linear"
-                        android:startX="78"
-                        android:startY="25"
                         android:endX="234"
                         android:endY="25"
-                        >
+                        android:startX="78"
+                        android:startY="25"
+                        android:type="linear">
 
                         <item
                             android:color="#CB0A4F"
-                            android:offset="0"
-                            />
+                            android:offset="0" />
 
                         <item
                             android:color="#113D80"
-                            android:offset="1"
-                            />
+                            android:offset="1" />
 
                     </gradient>
 
