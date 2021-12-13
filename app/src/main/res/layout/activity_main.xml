@@ -26,9 +26,10 @@
         app:layout_constraintTop_toBottomOf="@+id/imgNightLife" />
 
     <TextView
+        android:id="@+id/tvConnect"
         android:layout_width="245dp"
         android:layout_height="56dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="80dp"
         android:text="Connect with others financians"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -41,9 +42,10 @@
 
     <EditText
         android:id="@+id/edtViewChat"
-        android:layout_width="312dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="40dp"
         android:layout_height="48dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/chat_input"
         android:drawableEnd="@drawable/ic_chatinput"
         android:hint="  ID / Email / Phone number"
@@ -52,19 +54,20 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tvConnect" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtPass"
-        android:layout_width="312dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="365dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="12dp"
         android:textColorHint="@color/white"
         app:hintEnabled="false"
         app:hintTextColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtViewChat"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="#575656">
 
@@ -73,9 +76,9 @@
             android:layout_height="match_parent"
             android:background="@drawable/chat_input"
             android:hint="Password"
-            android:paddingVertical="10dp"
             android:inputType="textPassword"
             android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
@@ -85,22 +88,22 @@
     <TextView
         android:layout_width="120dp"
         android:layout_height="18dp"
-        android:layout_marginTop="425dp"
-        android:layout_marginRight="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
         android:text="Forgot Password?"
         android:textAlignment="center"
         android:textColor="#ECE8FF"
         android:textFontWeight="600"
         android:textSize="13dp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPass" />
 
     <TextView
         android:id="@+id/btnLogin"
         android:layout_width="312dp"
         android:layout_height="50dp"
-        android:layout_marginTop="470dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/btn_login"
         android:gravity="center"
         android:text="Login"
@@ -112,12 +115,13 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/edtPass" />
 
     <TextView
+        android:id="@+id/tvSignUp"
         android:layout_width="112dp"
         android:layout_height="30dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="20dp"
         android:text="Or signin up with  "
         android:textAlignment="center"
         android:textColor="#ECE8FF"
@@ -126,81 +130,86 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
-    <ImageButton
-        android:id="@+id/imgVanTay"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="580dp"
-        android:background="@drawable/backgroupfour"
-        android:src="@drawable/ic_vantay"
+    <LinearLayout
+        android:id="@+id/llIcons"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUp">
 
-    <ImageButton
-        android:id="@+id/imgGoogle"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="580dp"
-        android:background="@drawable/backgroupfour"
-        android:src="@drawable/ic_google"
-        app:layout_constraintStart_toEndOf="@+id/imgVanTay"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/imgVanTay"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroupfour"
+            android:src="@drawable/ic_vantay" />
 
-    <ImageButton
-        android:id="@+id/imgFaceBook"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="580dp"
-        android:background="@drawable/backgroupfour"
-        android:src="@drawable/ic_fb"
-        app:layout_constraintStart_toEndOf="@+id/imgGoogle"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/imgGoogle"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroupfour"
+            android:src="@drawable/ic_google" />
 
-    <ImageButton
-        android:id="@+id/imgIn"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="580dp"
-        android:background="@drawable/backgroupfour"
-        android:src="@drawable/ic_in"
-        app:layout_constraintStart_toEndOf="@+id/imgFaceBook"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/imgFaceBook"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroupfour"
+            android:src="@drawable/ic_fb" />
 
-    <TextView
-        android:id="@+id/tvVersion"
-        android:layout_width="81dp"
-        android:layout_height="18dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="680dp"
-        android:layout_marginRight="205dp"
-        android:text="Version 1.0.1  "
-        android:textColor="#99FFFFFF"
-        android:textFontWeight="400"
-        android:textSize="13dp"
-        android:textStyle="normal"
+        <ImageButton
+            android:id="@+id/imgIn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroupfour"
+            android:src="@drawable/ic_in" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llIcons">
 
-    <TextView
-        android:layout_width="114dp"
-        android:layout_height="16dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="680dp"
-        android:layout_marginRight="89dp"
-        android:gravity="right"
-        android:text="Create Account"
-        android:textColor="#DEFFFFFF"
-        android:textFontWeight="600"
-        android:textSize="13dp"
-        android:textStyle="normal"
-        app:layout_constraintStart_toEndOf="@id/tvVersion"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="81dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="35dp"
+            android:text="Version 1.0.1  "
+            android:textColor="#99FFFFFF"
+            android:textFontWeight="400"
+            android:textSize="13dp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:layout_width="114dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="35dp"
+            android:gravity="right"
+            android:text="Create Account"
+            android:textColor="#DEFFFFFF"
+            android:textFontWeight="600"
+            android:textSize="13dp"
+            android:textStyle="normal"
+             />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
