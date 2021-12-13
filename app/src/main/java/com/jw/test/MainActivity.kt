@@ -16,16 +16,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        binding.btnLogin.setOnClickListener() {
-//            if (binding.edtViewChat.text.toString()
-//                    .equals("dotanphu") && binding.edtPass.text.toString().equals("123456")
-//            ) {
-//                intent = Intent(this, MainActivity2::class.java)
-//                startActivity(intent)
-//            } else {
-//                Toast.makeText(this, "Sai tài khoản or mật khẩu", Toast.LENGTH_LONG).show()
-//            }
-//        }
+        binding.btnLogin.setOnClickListener() {
+            if (binding.edtViewChat.text.toString()
+                    .equals("dotanphu") && binding.edtPassword.text.toString().equals("123456")
+            ) {
+                intent = Intent(this, MainActivity2::class.java)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Sai tài khoản or mật khẩu", Toast.LENGTH_LONG).show()
+            }
+        }
 
         binding.imgGoogle.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW).apply {
